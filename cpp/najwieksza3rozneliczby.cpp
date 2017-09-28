@@ -13,21 +13,21 @@ int main(int argc, char **argv)
     cout <<"Podaj 3 rozne liczby " <<endl <<endl;
     while(a==b || a==c || b==c)
     {
-    cout<<"Podaj pierwsza liczbe: " <<endl;
+    cout<<"Podaj a: ";
     cin>>a;
-    cout<<"Podaj druga liczbe: " <<endl;
+    cout<<"Podaj: b: ";
     cin>>b;
-    cout<<"Podaj trzecia liczbe: " <<endl;
+    cout<<"Podaj c: ";
     cin>>c;
 }
     if (a>b && a>c)
-    cout<<"Najwieksza liczba jest a! ";
+    cout<<"Najwieksza liczba jest a ! ";
 
     else if (b>a && b>c)
-    cout<<"Najwieksza liczba jest b! ";
+    cout<<"Najwieksza liczba jest b ! ";
 
     else
-    cout<<"Najwieksza liczba jest c! ";
+    cout<<"Najwieksza liczba jest c ! ";
     	
         return 0;
 }
