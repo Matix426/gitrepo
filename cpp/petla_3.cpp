@@ -1,5 +1,5 @@
 /*
- * Program pobiera i sumuje 10 liczb, wynik drukuje na ekranie.
+ * petla_3.cpp
  */
 
 
