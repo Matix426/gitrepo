@@ -15,10 +15,10 @@ int main(int argc, char **argv)
     
     for(i =0; i < 75; i++)
     {
-    cout <<"Podaj liczbe: ";
-    cin >> liczba;
-    suma+=liczba;
-    if (suma > 75)
+        cout <<"Podaj liczbe: ";
+        cin >> liczba;
+        suma+=liczba;
+        if (suma > 75)
             break; 
 
     }   
