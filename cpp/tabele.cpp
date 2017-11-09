@@ -36,15 +36,32 @@ void najmniejsza(int tab[], int ile){
      
      int min = tab[0];
      int n = 0;
-     for(int i = 0; i<n;i++)
+     for(int i = 1; i<n;i++)
      {
-       if(min > tab[i])
+       if(min < tab[i])
        min=tab[i];  
     }
     
     cout <<"Najmniejsza: " << min <<endl;
 
 }
+
+void ile5(int tab[], int ile)
+{
+         int i;
+         int licznik5 = 0;
+         for(i = 0; i<ile;i++)
+         {
+            if(tab[i]%5==0) 
+            licznik5++;
+            
+        }
+        cout <<"Podzielne przez 5: "<<licznik5<<endl;
+
+}
+
+
+
 
 int main(int argc, char **argv)
 {
@@ -58,7 +75,12 @@ int main(int argc, char **argv)
     
     pobierzliczby(liczby, rozmiar);
     sumuj(liczby, rozmiar);
-    najmniejsza(liczby, rozmiar);    
+    najmniejsza(liczby, rozmiar); 
+    ile5(liczby, rozmiar);
+    
+    
+                    
+        
     
     
     return 0;
