@@ -4,17 +4,19 @@
 #  potega.py
 #  
 
-wynik = 1
-a = int( raw_input() )
-b = int( raw_input() )
- 
-while b > 0 :
-wynik*= a
-b = b-1
- 
-print wynik
+def potega(x, n):
+    i = 1
+    wynik = 1
+    while i <=n:
+        wynik = wynik * x
+        i = i + 1
+    return wynik
 
 def main(args):
+    x = float(input('Podaj podstawę: '))
+    n = int(input('Podaj wykładnik: '))
+    print('Potęga: ', potega(x, n))
+    
     return 0
 
 if __name__ == '__main__':
