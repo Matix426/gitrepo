@@ -13,9 +13,12 @@ def silnia_it(n):
 
 def main(args):
     n = int(input('Podaj liczbę naturalną: '))
-    print('Silnia: ', silnia_it(n))
-    
-    
+    assert type(n) == int
+    assert silnia_it(0) == 1
+    assert silnia_it(1) == 1
+    assert silnia_it(2) == 2
+    assert silnia_it(3) == 6
+    # print('Silnia dla {:d}: {:d}', .format(n, silnia_it(n))
     return 0
 
 if __name__ == '__main__':
