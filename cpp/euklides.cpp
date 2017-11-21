@@ -16,7 +16,7 @@ int nww(int a, int b)
         else
         b = b - a;
     }
-        return a;
+    return a;
 }
 
 int main(int argc, char **argv)
