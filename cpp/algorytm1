@@ -1,0 +1,24 @@
+/*
+ * algorytm1
+ */
+
+
+#include <iostream>
+
+int main(int argc, char **argv)
+{
+    int n = 0
+    int iloczyn = 1
+    int i = 1
+    cout <<" Podaj liczbę n: ";
+    cin >> n;
+    cout <<"Podaj a " ;
+    iloczyn = iloczyn * a
+        while(i=n)
+            return iloczyn;
+        else
+            i = i+1
+	
+	return 0;
+}
+
