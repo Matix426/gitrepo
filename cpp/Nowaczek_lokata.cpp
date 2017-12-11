@@ -1,5 +1,6 @@
 /*
  * Nowaczek_lokata.cpp
+<<<<<<< HEAD
  * 
  * Copyright 2017  <>
  * 
@@ -19,14 +20,39 @@
  * MA 02110-1301, USA.
  * 
  * 
+=======
+>>>>>>> 1456864bad9dbfcac36da8e71e59c9cb4aa1e651
  */
 
 
 #include <iostream>
 
+<<<<<<< HEAD
 int main(int argc, char **argv)
 {
 	
 	return 0;
 }
 
+=======
+using namespace std;
+
+
+int main(int argc, char **argv)
+{
+    int suma, ile, wplata;
+    cout << "Wprowadz ilosc wplat: "; 
+    cin >> ile;
+    wplata = 100;
+    suma = 0;
+    
+    for(int i =0; i<ile; i++) 
+    {
+        suma += wplata;
+        wplata += 10;
+    }
+cout << "Ostatnia wplata wyniosla: " << wplata-10 <<endl;
+cout << "Stan konta: " << suma << endl;
+
+}
+>>>>>>> 1456864bad9dbfcac36da8e71e59c9cb4aa1e651
