@@ -7,6 +7,13 @@
 
 using namespace std;
  
+int silnia_rek(int a)
+{
+    if (a < 2)
+        return 1;
+    return silnia_rek(a-1) * a;
+}
+
 int main()
 {
     int a;
@@ -18,7 +25,7 @@ int main()
     for (int i = 1; i<=a;i++)
         wynik*= i;
  
-    cout <<"Silnia: " <<wynik << endl;
+    cout <<"Silnia: " <<silnia_rek(a) << endl;
  
     return(0);
 }

@@ -11,6 +11,15 @@ int a, b;
 int x=0;
 int y=1;
  
+int fib_rek(int a)
+{
+    if (a < 2)
+        return 1;
+    return fib_rek(a - 1) + fib_rek(a - 2);
+}
+
+
+
 int main()
 {
     cout << "Podaj wyraz ciągu Fibonacciego: " ;
@@ -31,7 +40,8 @@ int main()
     y=b;
  
 }
- 
+
+    cout<<"Ciąg liczby wynosi: "<<fib_rek(a) <<endl;
  
  
     return 0;

@@ -13,9 +13,9 @@ def silnia_it(n):
     return wynik
     
 def silnia_rek(n):
-    if n < 2
+    if n < 2:
         return 1
-    return silnia_rek(n)
+    return silnia_rek(n-1) * n
 
 def main(args):
     n = int(input('Podaj liczbę naturalną: '))
@@ -24,7 +24,7 @@ def main(args):
 
 
 
-    print('Silnia: ', silnia_it(n))
+    print('Silnia: ', silnia_rek(n))
 
 
     return 0

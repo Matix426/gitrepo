@@ -9,12 +9,20 @@
  
 using namespace std;
  
-float potega(float x, int n)
+int potega_rek(int a, int n)
+{
+    if (n==0)
+        return 1;
+    return potega_rek(a, n-1) * a;
+}
+
+
+float potega(float a, int n)
 {
     float wynik = 1;
  
     for (int i = 0; i<n; i++)
-        wynik*=x;
+        wynik*=a;
  
     return wynik;
 }
@@ -22,14 +30,14 @@ float potega(float x, int n)
 int main()
 {
     int a;
-    int b;
+    int n;
  
     cout << "Podaj podstawę: ";
     cin >> a;
     cout << "Podaj wykladnik: ";
-    cin >> b;
+    cin >> n;
  
-    cout <<"Potęga: " <<potega(a, b) <<endl;
+    cout <<"Potęga: " << potega_rek(a, n)<<endl;
  
     return 0;
 }
