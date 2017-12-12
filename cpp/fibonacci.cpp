@@ -20,7 +20,7 @@ int fib_rek(int a)
 
 
 
-int main()
+int main(int argc, char **argv)
 {
     cout << "Podaj wyraz ciągu Fibonacciego: " ;
     cin>>a;

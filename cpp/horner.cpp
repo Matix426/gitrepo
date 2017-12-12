@@ -20,6 +20,15 @@ float horner_it(int k, float tbwsp[], float x) {
     return wynik;
 }   
 
+int horner_rek(float tbwsp[],int stopien, float x)
+{
+  if(stopien==0)
+    return tbwsp[0];
+ 
+  return horner_rek(tbwsp,stopien-1,x)* x + tbwsp[stopien];
+}
+
+
 int main(int argc, char **argv)
 {
     int stopien = 3; //stopien wielomianu
@@ -32,7 +41,7 @@ int main(int argc, char **argv)
         cout <<"Podaj współczynnik: ";
         cin >> tbwsp[i];  
 }
-        cout << horner_it(stopien, tbwsp, x) << endl;
+        cout << horner_rek(tbwsp,stopien,x) << endl;
     	return 0;
 }
 
