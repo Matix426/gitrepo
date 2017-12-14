@@ -14,7 +14,8 @@ using namespace std;
 float horner_it(int k, float tbwsp[], float x) {
     int i;
     float wynik = tbwsp[0];
-    for(i = 1; i < k + 1; i++) {
+    for(i = 1; i < k + 1; i++)
+    {
         wynik = wynik*x + tbwsp[i];
     }
     return wynik;
@@ -37,11 +38,12 @@ int main(int argc, char **argv)
     
     cout << "Podaj x: ";
     cin >> x;
-    for(int i = 0; i<4; i++){
-        cout <<"Podaj współczynnik: ";
+    for(int i = 0; i<4; i++)
+    {
+        cout <<"Podaj wspolczynnik: ";
         cin >> tbwsp[i];  
-}
+    }
         cout << horner_rek(tbwsp,stopien,x) << endl;
-    	return 0;
+    return 0;
 }
 

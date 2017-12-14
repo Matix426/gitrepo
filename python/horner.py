@@ -11,6 +11,11 @@ def horner_it(k, tbwsp, x):
 		wynik = wynik * x + tbwsp[i]
 		
 	return wynik
+    
+def horner_rek(tbwsp, stopien, x):
+    if stopien==0:
+        return tbwsp[0]
+    return horner_rek(tbwsp,stopien-1,x)* x + tbwsp[stopien]
 
 
 def main(args):
@@ -20,7 +25,7 @@ def main(args):
 	for i in range(0, 4):
 		tmp = int(input("Podaj współczynniki: "))
 		tbwsp.append(tmp)
-	print(horner_it(stopien, tbwsp, x))
+	print(horner_rek(tbwsp, stopien, x))
 	return 0
 
 

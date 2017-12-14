@@ -7,13 +7,14 @@
 #  an = an-1 * n^2 + 1
 
 def wyraz(n):
-    if n == 2:
-        return a
-    return rek(an-1*n^2+1)
+    if n==2:
+        return 
+    return wyraz(n^2)
 
 
 def main(args):
-    a = int(input("Podaj liczbę: "))
+    n = int(input("Podaj liczbę: "))
+    print(wyraz(n))
     
     return 0
 
