@@ -7,9 +7,9 @@
 #  an = an-1 * n^2 + 1
 
 def wyraz(n):
-    if n==2:
-        return 
-    return wyraz(n^2)
+    if n==1:
+        return 2
+    return wyraz(n-1) * wyraz(n*n) + 1
 
 
 def main(args):
