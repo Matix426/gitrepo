@@ -9,7 +9,7 @@
 def wyraz(n):
     if n==1:
         return 2
-    return wyraz(n-1) * wyraz(n*n) + 1
+    return 
 
 
 def main(args):
