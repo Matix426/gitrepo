@@ -20,7 +20,6 @@ void wypelnij(int t[], int n, int max)
 
 void drukuj(int t[], int n)
 {   
-    srand(time(NULL)); // inicjacja generatora liczb pseudolosowych
     for (int i=0; i<n; i++)
     {   
        cout << t[i] << " ";
