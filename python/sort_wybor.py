@@ -13,7 +13,7 @@ def wypelnij(lista, ile, maks):
 
 
 def sort_wybor(lista):
-    for i in range(len(list)):
+    for i in range(len(lista)):
         k = i
         for j in range(i + 1, len(lista)):
             if lista[j] < lista[k]:
