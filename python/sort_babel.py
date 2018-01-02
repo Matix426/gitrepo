@@ -14,6 +14,7 @@ def wypelnij(lista, ile, maks):
 
 
 def sort_babel(lista):
+    print("###########-SORTOWANIE BABELKOWE-###########")
     for i in range(len(lista) - 1, 0 ,-1):
         for j in range(i):
             if lista[j] > lista[j + 1]:
