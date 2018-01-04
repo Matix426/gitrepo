@@ -10,7 +10,7 @@ def sort_wstaw(lista):
     for i in range(1, len(lista)):
         el = lista[i]
         k = i - 1
-        while k >= 0 and lista[k] < el:  #  wyszukiwaniepozycji
+        while k >= 0 and lista[k] > el:  #  wyszukiwaniepozycji
             lista[k + 1] = lista[k]  #  przesuwanie elementow o 1 do gory
             k = k - 1
         lista[k + 1] = el
