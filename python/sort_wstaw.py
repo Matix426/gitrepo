@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 #  sort_wstaw.py
-#  
+#
 
 
 def sort_wstaw(lista):
@@ -10,11 +10,21 @@ def sort_wstaw(lista):
     for i in range(1, len(lista)):
         el = lista[i]
         k = i - 1
-        while k >= 0 and lista[k] > el:  #  wyszukiwaniepozycji
-            lista[k + 1] = lista[k]  #  przesuwanie elementow o 1 do gory
+        while k >= 0 and lista[k] > el:   # wyszukiwaniepozycji
+            lista[k + 1] = lista[k]  # przesuwanie elementow o 1 do gory
             k = k - 1
         lista[k + 1] = el
     return lista
+
+
+def sort_wstaw_bin(lista):
+    """Wersja binarna"""
+    for i in range(1, len(lista)):
+        el = lista[i]
+        k = szukaj_bin(0, i, lista, el)  # wyszukiwanie binarne miejsca do wstawienia elementu
+        pass
+
+
 
 
 def main(args):
