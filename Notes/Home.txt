@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-12-11T12:00:36+01:00
+
+====== Home ======
+Created poniedziałek 11 grudzień 2017
+
+Rekurencja 
