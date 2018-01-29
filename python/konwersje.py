@@ -33,11 +33,21 @@ def dec2other():
         liczba, konwersja1(liczba, podstawa), podstawa))
 
 
-def konwersja2(liczba, podstwa):
+def konwersja2(liczba, podstawa):
     """
     Funkcja konwertuje podana liczbe w systemie o podanej podstawie
     na system dziesiętny
     """
+    liczba = []  # lista reszt
+    while liczba != 0:
+        reszta = liczba % podstawa  # obliczanie reszt z dzielenia
+        if reszta > 9:
+            reszta = chr(reszta + 55)
+        liczba.append(str(reszta))
+        liczba = int(liczba / podstawa)
+
+    liczba.reverse()  # odwrócenie kolejności elementów!
+    return "".join(liczba)  # złączenie elementów!
 
 
 def other2dec():
@@ -45,15 +55,21 @@ def other2dec():
 
     Funkcja pobiera podstawę i liczbę od użytkownika
     """
-    print(konwerja2())
+    
+    podstawa = int(input("Podaj podstawę: "))
+    liczba = int(input("Podaj liczbę: "))
+    while podstawa < 2 or podstawa > 16:
+        podstawa = int(input("Podaj podstawę: "))
+    print("Wynik konwersji: {}(10) = {}({})".format(
+        liczba, konwersja2(liczba, podstawa), podstawa))
 
 
 def main(args):
-    print("Zamiana liczby dziesiętnej na liczbę o podanej podstawie"
+    print("Zamiana podanej liczby na system dziesietny"
           " <2;16> lub odwrotnie.")
 
 
-    other2odec()
+    other2dec()
     return 0
 
 
