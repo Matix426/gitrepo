@@ -38,16 +38,15 @@ def konwersja2(liczba, podstawa):
     Funkcja konwertuje podana liczbe w systemie o podanej podstawie
     na system dziesiętny
     """
-    liczba = []  # lista reszt
-    while liczba != 0:
-        reszta = liczba % podstawa  # obliczanie reszt z dzielenia
-        if reszta > 9:
-            reszta = chr(reszta + 55)
-        liczba.append(str(reszta))
-        liczba = int(liczba / podstawa)
-
-    liczba.reverse()  # odwrócenie kolejności elementów!
-    return "".join(liczba)  # złączenie elementów!
+    # 745(8) = 7 * 8^2 + 4 * 8^1 + 5
+    liczba10 = 0
+    potega = len(liczba) - 1
+    for cyfra in liczba:
+        if not cyfra.isdigit():
+            liczba10 += ord(cyfra.upper() - 55) * (podstawa ** potega)
+        liczba10 += int(cyfra) * (podstawa ** potega)
+        potega -= 1
+    return liczba
 
 
 def other2dec():
@@ -55,20 +54,25 @@ def other2dec():
 
     Funkcja pobiera podstawę i liczbę od użytkownika
     """
-    
+
     podstawa = int(input("Podaj podstawę: "))
     liczba = int(input("Podaj liczbę: "))
-    while podstawa < 2 or podstawa > 16:
-        podstawa = int(input("Podaj podstawę: "))
-    print("Wynik konwersji: {}(10) = {}({})".format(
-        liczba, konwersja2(liczba, podstawa), podstawa))
+    for i in liczba:
+        if i.isdigit():
+            cyfra = int(i)
+        else:
+            cyfra = ord(i.upper()) - 55
+        if cyfra > podstawa - 1:
+            print("Podales niedopuszczalna liczbe!")
+            return
+    print("Wynik konwersji {}[10]".format(konwersja2(liczba, podstawa)))
 
 
 def main(args):
     print("Zamiana podanej liczby na system dziesietny"
           " <2;16> lub odwrotnie.")
 
-
+    dec2other()
     other2dec()
     return 0
 
