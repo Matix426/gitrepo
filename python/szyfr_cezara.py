@@ -6,12 +6,13 @@ def szyfruj_cezar(tekst, klucz):
     klucz = klucz % 26
     szyfrogram = ""
     for znak in tekst:  # odczytuje pojedyncze znaki
-        znak = znak.upper()  #powiekszanie znakow
+        znak = znak.upper()  # powiekszanie znakow
         ascii = ord(znak) + klucz  # kod ascii litery zastepujacej
         if ascii > 90:
             ascii -= 26
         szyfrogram += chr(ascii)  # ord zamienia na kod ascii, chr na tekst
     return szyfrogram
+
 
 def deszyfruj(szyfrogram, klucz):
     deszyfrogram = ""
