@@ -10,9 +10,19 @@ def szyfruj(tekst, klucz):
     szyfrogram = ""
     for i in range(klucz):
         for j in range(int(len(tekst) / klucz)):
-        szyfrogram += tekst[pass]  # dokonczyc to i deszyfruj
+        szyfrogram += tekst[i + j * klucz]  # dokonczyc to i deszyfruj
 
     return szyfrogram
+    
+    
+def deszyfruj(szyfrogram, klucz):
+    tekst = ""
+    for i in range(int(len(szyfrogram) / klucz)):
+        for j in range(klucz):
+            tekst += szyfrogram[i + (j * int(len(szyfrogram) / klucz))]
+            tekst = tekst.replace(".", "")
+
+    return tekst
 
 
 def main(args):
@@ -25,7 +35,9 @@ def main(args):
 
     szyfrogram = szyfruj(tekst, klucz)
     print(szyfrogram)
-    #  print(deszyfruj(szyfrogram, klucz))
+    deszyfruj = deszyfruj(szyfrogram, klucz)
+    print(deszyfruj)
+    
     return 0
 
 
