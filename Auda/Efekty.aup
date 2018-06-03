@@ -1,0 +1,118 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Efekty_data" version="1.3.0" audacityversion="2.2.2" sel0="0.0000000000" sel1="72.6071961096" vpos="0" h="0.0000000000" zoom="8.4053763832" rate="44100.0" snapto="off" selectionformat="gg:mm:ss + milisekundy" frequencyformat="Hz" bandwidthformat="oktawy">
+	<tags>
+		<tag name="GENRE" value="Rock"/>
+		<tag name="ALBUM" value="Into"/>
+		<tag name="TITLE" value="Last Waltz"/>
+		<tag name="ARTIST" value="The Rasmus"/>
+	</tags>
+	<wavetrack name="lastwaltz" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3198819">
+				<waveblock start="0">
+					<simpleblockfile filename="e08082d8.au" len="262144" min="-0.209058" max="0.193764" rms="0.022274"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0808b9e.au" len="262144" min="-0.249365" max="0.232216" rms="0.033295"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e08084c9.au" len="262144" min="-0.683549" max="0.873898" rms="0.054798"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="e0808ee8.au" len="262144" min="-0.751177" max="0.805022" rms="0.103153"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="e080865d.au" len="262144" min="-0.819116" max="0.857127" rms="0.111375"/>
+				</waveblock>
+				<waveblock start="1310720">
+					<simpleblockfile filename="e080818d.au" len="262144" min="-0.729092" max="0.780714" rms="0.115458"/>
+				</waveblock>
+				<waveblock start="1572864">
+					<simpleblockfile filename="e0808bfc.au" len="262144" min="-0.852654" max="0.812021" rms="0.120059"/>
+				</waveblock>
+				<waveblock start="1835008">
+					<simpleblockfile filename="e08082e8.au" len="262144" min="-1.016455" max="1.031297" rms="0.200722"/>
+				</waveblock>
+				<waveblock start="2097152">
+					<simpleblockfile filename="e0808622.au" len="262144" min="-1.041412" max="1.026417" rms="0.259364"/>
+				</waveblock>
+				<waveblock start="2359296">
+					<simpleblockfile filename="e08082a0.au" len="262144" min="-1.067295" max="1.091189" rms="0.258392"/>
+				</waveblock>
+				<waveblock start="2621440">
+					<simpleblockfile filename="e080835c.au" len="262144" min="-1.060268" max="1.020471" rms="0.243338"/>
+				</waveblock>
+				<waveblock start="2883584">
+					<simpleblockfile filename="e0808737.au" len="157617" min="-0.958488" max="1.122317" rms="0.172174"/>
+				</waveblock>
+				<waveblock start="3041201">
+					<simpleblockfile filename="e0808dc3.au" len="157618" min="-0.936488" max="1.050454" rms="0.186222"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="72.53557823" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1294">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808cc9.au" len="1294" min="0.0" max="0.0" rms="0.0"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="lastwaltz" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3198819">
+				<waveblock start="0">
+					<simpleblockfile filename="e08085c2.au" len="262144" min="-0.264081" max="0.243115" rms="0.027921"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e08083de.au" len="262144" min="-0.425021" max="0.300668" rms="0.038933"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e0808793.au" len="262144" min="-0.624099" max="0.837201" rms="0.058397"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="e08080d2.au" len="262144" min="-0.810218" max="0.865062" rms="0.111248"/>
+				</waveblock>
+				<waveblock start="1048576">
+					<simpleblockfile filename="e08082cb.au" len="262144" min="-0.822815" max="0.90607" rms="0.11782"/>
+				</waveblock>
+				<waveblock start="1310720">
+					<simpleblockfile filename="e0808f7b.au" len="262144" min="-0.79559" max="0.869557" rms="0.123292"/>
+				</waveblock>
+				<waveblock start="1572864">
+					<simpleblockfile filename="e0808ce9.au" len="262144" min="-0.883917" max="0.930727" rms="0.132609"/>
+				</waveblock>
+				<waveblock start="1835008">
+					<simpleblockfile filename="e0808a58.au" len="262144" min="-0.999278" max="1.072809" rms="0.208343"/>
+				</waveblock>
+				<waveblock start="2097152">
+					<simpleblockfile filename="e08083c8.au" len="262144" min="-1.095761" max="1.084262" rms="0.269002"/>
+				</waveblock>
+				<waveblock start="2359296">
+					<simpleblockfile filename="e080895f.au" len="262144" min="-1.081462" max="1.01747" rms="0.267318"/>
+				</waveblock>
+				<waveblock start="2621440">
+					<simpleblockfile filename="e0808a8d.au" len="262144" min="-0.984733" max="1.083165" rms="0.252317"/>
+				</waveblock>
+				<waveblock start="2883584">
+					<simpleblockfile filename="e080834f.au" len="157617" min="-0.811697" max="1.012092" rms="0.171477"/>
+				</waveblock>
+				<waveblock start="3041201">
+					<simpleblockfile filename="e0808a30.au" len="157618" min="-0.919779" max="0.954079" rms="0.191252"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="72.53557823" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1294">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808e73.au" len="1294" min="0.0" max="0.0" rms="0.0"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
