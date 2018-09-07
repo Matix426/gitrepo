@@ -24,9 +24,9 @@ void pomnoz(int a, int b)
 
 void podziel(int a, int b) 
 {
-       if(b=0)
-       cout << "Nie dziel przez 0!"<endl; 
-       else 
+        if(b=0)
+            cout << "Nie dziel przez 0!"<endl; 
+        else 
             cout <<"Iloraz: "<<a/b<<endl;
 }
 
