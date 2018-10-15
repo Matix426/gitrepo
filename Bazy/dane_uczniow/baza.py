@@ -6,15 +6,25 @@ import csv
 
 
 def czytaj_dane(plik, separator=","):
+    dane = [] #pusta lista
     with open(plik, newline='', encoding='utf-8') as plikcsv:
-        tresc = csv.reader(plikcsv, delimiter=separator)
-    print(tresc)
+        tresc = csv.reader(plikcsv, delimiter=separator,)
+        for rekord in tresc:
+            dane.append(rekord)
+    print(dane)
         
 
 
 
 def main(args):
-    czytaj_dane('nazwiska.txt' , ' ')
+    con = sqlite3.connect('baza.db')
+    cur = con.cursor() #obiekt tzw. kursora
+    
+    with open('szkola.sql', 'r') as plik:
+        pass
+    #czytaj_dane('nazwiska.txt' , ' ')
+    #czytaj_dane('dane-osobowe.txt', '\t')
+    #czytaj_dane('oceny.txt', ' ')
     return 0
 
 if __name__ == '__main__':
