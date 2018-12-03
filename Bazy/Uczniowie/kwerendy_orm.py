@@ -57,11 +57,57 @@ def kw04():
     for obj in query:
         print(obj.uczen.nazwisko, obj.ile)
 
+def kw05():
+    """Po ile uczniow mają klasy uporzadkuj wedlug ilosci"""
+    query = (Uczen
+    .select(Uczen.klasa, fn.Count(Uczen.klasa).alias('ile'))
+    .join(Klasa)
+    .group_by(Uczen.klasa)
+    .order_by(SQL('ile').asc())
+    )
+    for obj in query:
+        print(obj.klasa.klasa, obj.ile)
+
+def kw06():
+    """Średnia ocen z przedmiotow"""
+    fn.AVG()
+    query = (Ocena
+    .select(Ocena.przedmiot.przedmiot, fn.AVG(Ocena.ocena).alias('srednia'))
+    .join(Przedmiot)
+    .group_by(Ocena.przedmiot.przedmiot)
+    .order_by(SQL('srednia').desc())
+    )
+    for obj in query:
+        print(obj.przedmiot.przedmiot, obj.srednia)
+
+def kw07():
+    """Średnia ocen poszczegolnych uczniow"""
+    fn.AVG()
+    query = (Ocena
+    .select(Ocena.uczen.nazwisko, fn.AVG(Ocena.ocena).alias('srednia'))
+    .join(Uczen)
+    .group_by(Ocena.uczen.nazwisko)
+    .order_by(SQL('srednia').desc())
+    )
+    for obj in query:
+        print(obj.uczen.nazwisko, obj.srednia)
+
+def kw08():
+    """Oceny ucznia Szymczak z poszczegolnych przedmiotow"""
+    fn.AVG()
+    query = (Uczen
+    .select(Uczen.nazwisko.ocena)
+    .join(Ocena)
+    .where(Uczen.nazwisko.ocena.startswith('Szymczak'))
+    )
+    for obj in query:
+        print(obj.nazwisko.ocena, obj.ocena)
+
 
 def main(args):
     baza.connect()
     
-    kw04()
+    kw08()
     
 
     baza.close()
