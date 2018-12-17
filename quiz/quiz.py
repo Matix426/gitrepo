@@ -4,23 +4,19 @@
 #  quiz.py
 
 
-from flask import Flask
-from flask import render_template
-app = Flask(__name__)
+from flask import g
+from modele import *
+from views import *
 
-@app.route("/")
-def hello():
-    #return "Witaj Świecie!"
-    return render_template("index.html")
+@app.before_request
+def before_request:
+    g.db = baza
+    g.db.connect()
     
-    
-@app.route("/strona")
-def strona():
-    return "<h1>Witaj na serwerze</h1><h2>Aplikacja Quiz</h2>"
-    
-@app.route("/klasa")
-def klasa():
-    return "<h2>Kl3ag1</h2>"
+@app.after_request
+def after_request(response):
+    g.db.close()
+    return response
 
 
 if __name__ == '__main__':
