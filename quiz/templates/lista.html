@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<!--
+   index.html
+-->
+
+<head>
+<meta charset="utf-8" />
+    <title>Aplikacja Quiz</title>
+    <style type="text/css">
+        #menu li { display: inline; margin-left: lem; }
+    </style>
+</head>
+
+<body>
+    <ul id="menu">
+        <li><a href="{{ url_for('hello') }}">Strona główna</a></li>
+        <li><a href="{{ url_for('lista') }}">Lista</a></li>
+        <li><a href="{{url_for('quiz')}}">Quiz</a></li>
+    </ul>
+    
+    <h1>Aplikacja QUIZ - lista pytań</h1>
+    <ol>
+        {% for p in pytania %}
+            <li>{{ p.pytanie }}</li>
+        {% endfor %}
+    
+        </ol>
+            <p>Pytania i odpowiedzi</p>
+    
+
+</body>
+</html>
