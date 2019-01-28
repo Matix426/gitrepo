@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pl">
 <!--
-   index.html
+   templates/lista.html
 -->
 
 <head>
 <meta charset="utf-8" />
-    <title>Aplikacja Quiz</title>
+    <title>Aplikacja QUIZ – lista pytań</title>
     <style type="text/css">
-        #menu li { display: inline; margin-left: lem; }
+        #menu li { display: inline; margin-left: 1em; }
     </style>
 </head>
 
@@ -16,18 +16,16 @@
     <ul id="menu">
         <li><a href="{{ url_for('hello') }}">Strona główna</a></li>
         <li><a href="{{ url_for('lista') }}">Lista</a></li>
-        <li><a href="{{url_for('quiz')}}">Quiz</a></li>
+        <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
     </ul>
-    
-    <h1>Aplikacja QUIZ - lista pytań</h1>
-    <ol>
-        {% for p in pytania %}
-            <li>{{ p.pytanie }}</li>
-        {% endfor %}
-    
-        </ol>
-            <p>Pytania i odpowiedzi</p>
-    
 
+    <h1>Aplikacja QUIZ – lista pytań</h1>
+    
+    <ol>
+    {% for p in pytania %}
+        <li>{{ p.pytanie }}</li>
+    {% endfor %}
+    </ol>
+    
 </body>
 </html>
