@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-<html lang="pl">
-<!--
-   templates/quiz.html
--->
-
-<head>
-<meta charset="utf-8" />
-    <title>Aplikacja QUIZ – odpowiedz na pytania</title>
-    <style type="text/css">
-        #menu li { display: inline; margin-left: 1em; }
-        ol.odpowiedzi { list-style-type: lower-alpha; }
-    </style>
-</head>
-
-<body>
-    <ul id="menu">
-        <li><a href="{{ url_for('hello') }}">Strona główna</a></li>
-        <li><a href="{{ url_for('lista') }}">Lista</a></li>
-        <li><a href="{{ url_for('quiz') }}">Quiz</a></li>
-    </ul>
-
-    <h1>Aplikacja QUIZ – odpowiedz na pytania</h1>
+{% extends "szablon.html" %}
+{% block tytul %}Quiz - odpowiedzi{% endblock %}
+{% block h1 %}Quiz - odpowiedzi{% endblock %}
+{% block tresc %}
     
     <form method="POST">
     <ol>
@@ -39,6 +20,6 @@
     
     <input type="submit" value="Prześlij">
     </form>
-    
-</body>
-</html>
+
+{% endblock %}
+
