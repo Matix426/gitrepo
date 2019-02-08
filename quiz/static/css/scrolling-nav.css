@@ -15,11 +15,7 @@ header {
 }
 
 section {
-  padding: 75px 0;
+  padding: 100px 0;
 }
 
-.bg-mojkolor {
-
-background-color:#8A0000
-
-}
+.bg-mojkolor { background-color: #B11818; }
